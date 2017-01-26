@@ -18,8 +18,15 @@ public class W17Jan26 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Employee emp1 = new Employee("bob","joe",123,LocalDate.of(1993, Month.JUNE, 1));
+        HourlyEmployee emp1 = new HourlyEmployee("Bobby","Joe",1234,LocalDate.of(1993, Month.JUNE, 1), 25.20);
+        
         System.out.println("The first employee is "+emp1.toString());
+        
+        emp1.recordHoursWorked(8);
+        emp1.recordHoursWorked(3);
+        emp1.recordHoursWorked(8);
+
+        System.out.printf("%s%n", emp1.getPayCheck());
     }
     
 }

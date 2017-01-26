@@ -56,7 +56,7 @@ public class PayCheck {
     
     public String toString()
     {
-        return String.format("Check #: %d made out to %s for the amount of $%.2f", 
+        return String.format("Check #:%d made out to %s for the amount of $%.2f", 
                                 checkNumber, employeeName, amount);
     }
     
