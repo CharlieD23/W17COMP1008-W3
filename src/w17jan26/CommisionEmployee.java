@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * @author Charlie
  */
 public class CommisionEmployee extends Employee{
-    private double monthlySales, commissionRate;
+    protected double monthlySales, commissionRate;
 
     public CommisionEmployee(String first, String last, int sin, LocalDate dob, double comRate) {
         super(first, last, sin, dob);

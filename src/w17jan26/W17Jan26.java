@@ -36,6 +36,15 @@ public class W17Jan26 {
         emp2.recordSales(983.33);
 
         System.out.printf("%s%n", emp2.getPayCheck());
+        
+        BasePlusCommissionEmployee emp3 = new BasePlusCommissionEmployee("Jack","Black",1235,LocalDate.of(1987, Month.MAY, 6), 5, 1000);
+        
+        System.out.println("The third employee is "+emp3.toString());
+        
+        emp3.recordSales(3234.33);
+        emp3.recordSales(983.33);
+
+        System.out.printf("%s%n", emp3.getPayCheck());
     }
     
 }
